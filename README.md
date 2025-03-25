@@ -11,7 +11,7 @@ A red-team-themed Jeopardy game with hackable web buzzers!
 ## Setup
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/vinnysilvax/Red-Team-Jeopardy-w-Vulnerable-Buzzers
 cd redteam-jeopardy
 python3 -m venv env
 source env/bin/activate
