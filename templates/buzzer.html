@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Buzzer - {{ team }}</title></head>
+<body>
+  <h2>Team {{ team }}</h2>
+  <button onclick="buzz()">BUZZ!</button>
+  <p id="result"></p>
+
+  <script>
+    function buzz() {
+      fetch("/api/buzz", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: "team={{ team }}"
+      })
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("result").innerText = data.message;
+      });
+    }
+  </script>
+</body>
+</html>

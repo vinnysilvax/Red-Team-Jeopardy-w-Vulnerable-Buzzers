@@ -1,2 +1,30 @@
-# Red-Team-Jeopardy-w-Vulnerable-Buzzers
-A Jeopardy-style quiz game where:  Students form teams and answer red team / infosec-themed questions.  Each team gets a web buzzer to press when they want to answer.  Twist: The buzzer system is built with intentional vulnerabilities (e.g., insecure APIs, lack of auth, client-side controls).  Teams can either:  Play fair and buzz in properly. 
+# Red Team Jeopardy 🔥
+
+A red-team-themed Jeopardy game with hackable web buzzers!
+
+## Features
+- Web-based game board
+- Team-specific buzzers
+- Deliberately vulnerable API for red team fun
+- Teaches web app hacking basics
+
+## Setup
+
+```bash
+git clone <repo-url>
+cd redteam-jeopardy
+python3 -m venv env
+source env/bin/activate
+pip install flask
+python app.py
+```
+
+Visit:
+- `http://localhost:5000/` for the game board
+- `/buzzer/team1`, `/buzzer/team2`, etc. for team buzzers
+
+## Try to:
+- Buzz in first... or hack the API to cheat!
+- Spoof other teams
+- Flood the buzzer
+- Have fun & learn!
